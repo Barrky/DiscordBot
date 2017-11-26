@@ -3,7 +3,7 @@ const bot = new Discord.Client();
 const prefix = "/";
 var guild = bot.guilds.get("340881716392493057")
 
-bot.login("MzgzOTcwOTg4NDY4OTk0MDQ4.DPsAbQ.EKfoWwWxxeDpabJMluHOH9-mz_g");
+bot.login(process.env.TOKEN);
 
 bot.on('ready', () => {
     bot.user.setPresence({ game: { name: "Bot Barrkyy", type: 0 } });
